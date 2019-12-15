@@ -1,0 +1,26 @@
+{
+  "name": "css-grid-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint components stories",
+    "lint:fix": "eslint --fix components stories",
+    "storybook": "npm run lint && start-storybook -p 6006"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@storybook/html": "^5.1.11",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
