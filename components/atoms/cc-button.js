@@ -1,16 +1,19 @@
 import { LitElement, html, css } from 'lit-element';
+import { skeleton } from '../styles/skeleton';
 
 class CcButton extends LitElement {
   render () {
     return html`
-    <button type="button" disabled
-    >
+    <button type="button" disabled class="skeleton">
+      <slot></slot>
     </button>
     `;
   }
 
-  static get styles() {
-    return css`
+  static get styles () {
+    return [
+      skeleton,
+      css`
       :host {
         box-sizing: border-box;
         display: inline-block;
@@ -43,11 +46,8 @@ class CcButton extends LitElement {
         cursor: inherit;
         opacity: .5;
       }
-      .skeleton {
-        background-color: #bbb;
-        border-color: #777;
-      }
-    `;
+      `,
+    ];
   }
 }
 

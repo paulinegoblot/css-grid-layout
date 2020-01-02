@@ -1,5 +1,5 @@
-import '../components/dashboard/cc-dashboard';
-import '../components/tiles/cc-header';
+import '../../components/dashboard/cc-dashboard';
+import '../../components/tiles/cc-header';
 import { storiesOf } from '@storybook/html';
 
 function createComponent (width) {
@@ -10,11 +10,11 @@ function createComponent (width) {
   return component;
 }
 
-storiesOf('CSS Grid layout| Simple dashboard', module)
+storiesOf('99. Dashboards| Simple dashboard', module)
   .add('named-area', () => {
     const dashboard = createComponent(1250);
-    dashboard.innerHTML=`
-      <cc-header-app class="head"></cc-header-app>
+    dashboard.innerHTML = `
+      <cc-header></cc-header>
     `;
     return dashboard;
   });

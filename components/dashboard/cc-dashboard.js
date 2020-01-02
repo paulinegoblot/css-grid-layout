@@ -7,7 +7,7 @@ class CcDashboard extends LitElement {
     `;
   }
 
-  static get styles() {
+  static get styles () {
     return css`
       :host {
         display: grid;
