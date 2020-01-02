@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 import Chart from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { skeleton } from '../styles/skeleton.js';
 import '../atoms/cc-loader.js';
 
@@ -24,6 +25,7 @@ class CcTileInstances extends LitElement {
   firstUpdated () {
     this._ctx = this.renderRoot.getElementById('chart');
     this._chart = new Chart(this._ctx, {
+      plugins: [ChartDataLabels],
       type: 'bar',
       data: {
         labels: ['??', '??', '??', '??', '??', '??'],
@@ -51,9 +53,7 @@ class CcTileInstances extends LitElement {
             anchor: 'end',
             offset: 0,
             align: 'end',
-            formatter: (value, context) => {
-              return '?';
-            },
+            formatter: (value, context) => '?',
           },
         },
         scales: {
