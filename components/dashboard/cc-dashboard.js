@@ -13,12 +13,19 @@ class CcDashboard extends LitElement {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, min-content) 1fr 1fr;
-        background: #BADA55;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: 'head head head head' '. . . .' 'map map map map';
       }
-      /* .head TILE POSITION/SIZE */
+
       ::slotted(*.head) {
-        grid-column: 1 / -1;
+        grid-area: head;
+      }
+
+      ::slotted(*.map) {
+        grid-area: map;
+        height: auto;
+        width: auto;
+        min-height: 25rem;
       }
     `;
   }
