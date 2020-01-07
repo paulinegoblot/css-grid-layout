@@ -5,13 +5,13 @@ import '../../components/tiles/cc-tile-scalability';
 import '../../components/tiles/cc-tile-deployments';
 import '../../components/tiles/cc-tile-consumption';
 import '../../components/tiles/cc-tile-requests';
-import '../../components/tiles/cc-tile-consumption';
+import '../../components/tiles/cc-tile-status-code';
 import '../../components/maps/cc-map';
 import { storiesOf } from '@storybook/html';
 
 function createDashboard (width, className) {
   const component = document.createElement('cc-placed-areas-dashboard');
-  component.className = className
+  component.className = className;
   component.style.maxWidth = width + 'px';
   component.style.width = '100%';
   return component;
