@@ -27,8 +27,16 @@ class NamedAreasGrid extends LitElement {
   static get styles () {
     return css`
       .grid {
-        max-width: 950px;
-        width: 100%;
+          max-width: 950px;
+          width: 100%;
+      }
+      .map {
+        height: auto;
+        width: auto;
+        min-height: 25rem;
+      }
+
+      .grid {
         display: grid;
         grid-gap: 1rem;
         /*
@@ -45,9 +53,6 @@ class NamedAreasGrid extends LitElement {
       }
 
       .map {
-        height: auto;
-        width: auto;
-        min-height: 25rem;
         /*
         grid-area: map;
         */

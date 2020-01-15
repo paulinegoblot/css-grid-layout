@@ -40,6 +40,9 @@ class SimpleGrid extends LitElement {
       .grid {
         max-width: 950px;
         width: 100%;
+      }
+
+      .grid {
         /*
         display: grid;
         grid-gap: 1rem;

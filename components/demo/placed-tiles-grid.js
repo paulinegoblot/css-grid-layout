@@ -27,8 +27,16 @@ class PlacedTilesGrid extends LitElement {
   static get styles () {
     return css`
       .grid {
-        max-width: 950px;
-        width: 100%;
+          max-width: 950px;
+          width: 100%;
+      }
+      .map {
+        height: auto;
+        width: auto;
+        min-height: 25rem;
+      }
+
+      .grid {
         display: grid;
         grid-gap: 1rem;
         /*
@@ -44,9 +52,6 @@ class PlacedTilesGrid extends LitElement {
       }
 
       .map {
-        height: auto;
-        width: auto;
-        min-height: 25rem;
         /*
         grid-column: 1 / span 2;
         grid-row: 3 / -1;
