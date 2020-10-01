@@ -9,18 +9,18 @@
     "storybook": "npm run lint && start-storybook -p 6006"
   },
   "dependencies": {
-    "lit-element": "^2.2.0",
     "chart.js": "^2.9.3",
     "chartjs-plugin-datalabels": "^0.7.0",
-    "leaflet": "^1.6.0"
+    "leaflet": "^1.7.1",
+    "lit-element": "^2.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@storybook/web-components": "^5.3.7",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.11.6",
+    "@storybook/web-components": "^5.3.21",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.3.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
